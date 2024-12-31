@@ -1,0 +1,146 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ff9966, #ff5e62); /* Replace with your choice */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+        .container {
+            padding: 20px;
+            max-width: 90%;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            margin-top: 20px;
+        }
+
+        .logo img {
+            max-width: 150px;
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            border: 1px solid rgb(255, 238, 2);
+        }
+
+        .headline {
+            margin: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .subheadline {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #0044cc;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+            border: 1px solid white;
+        }
+
+        .button:hover {
+            background-color: #0033aa;
+        }
+
+        #timer {
+            font-size: 36px;
+            font-weight: bold;
+            background: red;
+            padding: 13px 10px;
+            border-radius: 10px;
+            border: 1px solid white;
+            margin: 20px 0;
+        }
+
+        .join-now {
+            background: #0044cc;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            margin-top: 20px;
+            display: inline-block;
+            border: 1px solid white;
+        }
+
+        .join-now:hover {
+            background: #0033aa;
+        }
+
+        #cc {
+            color: yellow;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .headline {
+                font-size: 20px;
+            }
+
+            .subheadline {
+                font-size: 16px;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+
+            #timer {
+                font-size: 28px;
+                padding: 12px 16px;
+            }
+
+            .join-now {
+                font-size: 16px;
+                padding: 12px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .headline {
+                font-size: 18px;
+            }
+
+            .subheadline {
+                font-size: 14px;
+            }
+
+            .button {
+                font-size: 12px;
+                padding: 13px 12px;
+            }
+
+            #timer {
+                font-size: 24px;
+                padding: 10px 12px;
+                border: 1px solid white;
+                
+            }
+
+            .join-now {
+                font-size: 14px;
+                padding: 10px 16px;
+                border: 1px solid white;
+            }
+        }

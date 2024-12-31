@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorTrading</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="<%= telegramLink %>"><img src="<%=  ImageIcon %>" alt="Image"></a>
+        </div>
+
+        <div class="headline">&#128176; Click Above 👆 to Join Free &#128176;</div>
+        <h1 class="subheadline">🌈Color trend at your fingertips!<br>🎯कलर ट्रेडिंग करके कमाओ🔥🔥<br>🎯🌟सारा लॉस रिकवर करा दूंगा🔥🔥<br> 🎯99% Accuracy🔥</h1>
+
+        <div class="buttons">
+            <a href="<%= telegramLink %>" class="button">  JOIN OUR TELEGRAM NOW <span><i class="fa-brands fa-telegram"></i></span></a>
+            <a href="<%= registerLink %>"    class="button">REGISTER <span><i class="fa-solid fa-gamepad"></i></span></a>
+        </div>
+        <h2 id="cc">Limited Time Left:-</h2>
+        <h1 id="timer">10</h1>
+
+        <a href="#" class="join-now">JOIN FREE NOW</a>
+    </div>
+    <script>
+        let timeLeft = 1000; 
+        const timerElement = document.getElementById('timer');
+        const redirectUrl = "https://t.me/+LOWjyBh_QBxmMzM1 "; // Replace with the desired link
+       
+        const sound = new Audio("/beep-01a.mp3"); // Path to your sound file
+        function startCountdown() {
+            const countdown = setInterval(() => {
+                timerElement.textContent = timeLeft < 10 ? "0" + timeLeft : timeLeft;
+
+                if (timeLeft === 4) {
+                    sound.play(); // Play sound when timer is 4
+                }
+
+                if (timeLeft <= 0) {
+                    clearInterval(countdown); // Stop the timer
+                    window.location.href = redirectUrl; // Redirect to the link
+                }
+
+                timeLeft--;
+            }, 1000);
+        }
+        startCountdown(); // Start the timer
+    </script>
+</body>
+</html>
